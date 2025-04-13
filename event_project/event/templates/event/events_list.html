@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog</title>
+    <title>EVENTS</title>
 </head>
 <body>
-    <h1>Blog Posts</h1>
-    <ul>
-        {% for post in posts %}
-            <li>
-                <h2>{{ post.title }}</h2>
-                <p>{{ post.content }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+        <h1>EVENT List</h1>
+        <ul>
+            {% for events in events %}
+                <li>
+                    <h2>{{ events.name }}</h2>
+                    <p>{{event.image}}</p>
+                </li>
+            {% endfor %}
+        </ul>
 </body>
 </html>

@@ -1,9 +1,10 @@
 from django.db import models
-from taggit.managers import TaggableManager
 
 # Create your models here.
 #install pip install pillow for imagefield
 #pip3 install django-taggit
+
+
 class Events(models.Model):
     name = models.CharField(max_length=200)
     image = models.ImageField(upload_to = 'images/')
@@ -24,4 +25,7 @@ class Events(models.Model):
     location = models.CharField(max_length=200)
     date = models.DateField()
     time = models.TimeField()
-    tag = TaggableManager()
+
+def __str__(self):
+    return self.title
+
