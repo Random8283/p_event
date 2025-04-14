@@ -9,7 +9,7 @@
             {% for events in events %}
                 <li>
                     <h2>{{ events.name }}</h2>
-                    <p>{{event.image}}</p>
+                    <img src = "{{ events.image.url }}">
                 </li>
             {% endfor %}
         </ul>
